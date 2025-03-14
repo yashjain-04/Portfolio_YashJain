@@ -865,3 +865,30 @@
     z-index: 9999;
     opacity: 0;
   }
+
+
+
+
+  @media (max-width: 520px) {
+    .nav-links a {
+      font-size: 0.9rem; /* Adjust this value as needed */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-links a {
+      font-size: 0.75rem; /* Adjust this value as needed */
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .nav-links a {
+      font-size: 0.7rem; /* Adjust this value as needed */
+    }
+  }
+
+  @media (max-width: 380px) {
+    .nav-links a {
+      font-size: 0.65rem; /* Adjust this value as needed */
+    }
+  }
