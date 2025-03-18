@@ -133,26 +133,6 @@ document.addEventListener("DOMContentLoaded", function () {
             // Here you would typically send the form data to a server
             // For demo purposes, we'll just log it and show a success message
             console.log("Form submitted:", { name, email, subject, message });
-
-
-            /*CHANGES*/
-            //Use EmailJS to send email
-            emailjs.send("service_u9wg02w", "template_2to7yoi", {
-                subject: subject,
-                name: name,
-                message: message,
-                email: email,
-            })
-            .then(function(response) {
-                console.log("Email sent successfully!", response.status, response.text);
-                alert("Thank you for your message! I'll check my email and get back to you soon.");
-                contactForm.reset();
-            })
-            .catch(function(error) {
-                console.error("Error sending email:", error);
-                alert("There was an issue. Please try again later.");
-            });
-
             
             // Show success message
             alert("Thank you for your message! I'll get back to you soon.");
