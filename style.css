@@ -8,6 +8,7 @@
     --darker-bg: #0a0a0a;
     --card-bg: rgba(30, 30, 30, 0.5);
     --text: #f0f0f0;
+    --nav-text: #f0f0f0;
     --text-muted: #b0b0b0;
     --accent: #3CDEF9;
     --glass-border: rgba(255, 255, 255, 0.1);
@@ -73,7 +74,7 @@
   }
   
   .nav-links a {
-    color: var(--text);
+    color: var(--nav-text);
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -255,6 +256,8 @@
   
   .about-text {
     flex: 1;
+    /*CHANGES*/
+    text-align: center;
   }
   
   .about-text p {
@@ -378,6 +381,18 @@
     color: var(--text);
   }
   
+  /*CHANGES*/
+  .project-content ul {
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  /*CHANGES*/
+  .project-content li {
+    margin-left: 19px;
+  }
+
   .project-content p {
     color: var(--text-muted);
     margin-bottom: 20px;
@@ -387,6 +402,10 @@
   .project-links {
     display: flex;
     gap: 15px;
+
+    /*CHANGES*/
+    position: absolute;
+    bottom: 20px;
   }
   
   .project-link {
@@ -421,6 +440,11 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+
+  /*CHANGES*/
+  .certificate a{
+    text-decoration: none;
+  }
   
   .certificate {
     background: var(--card-bg);
@@ -430,6 +454,12 @@
     backdrop-filter: blur(10px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /*CHANGES*/
+  .certificate a {
+    position: absolute;
+    bottom: 10px;
   }
   
   .certificate:hover {
@@ -453,6 +483,9 @@
   .certificate-date {
     font-size: 0.8rem;
     color: var(--accent);
+
+    /*CHANGES*/
+    margin-bottom: 10px;
   }
   
   /* Contact Section */
@@ -713,7 +746,7 @@
   
   @media (max-width: 576px) {
     nav {
-      padding: 15px 5%;
+      padding: 10px 5%;
     }
     
     .logo {
@@ -865,6 +898,7 @@
     z-index: 9999;
     opacity: 0;
   }
+
 
 
 
