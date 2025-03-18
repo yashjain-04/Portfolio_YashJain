@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Download resume function
     window.downloadResume = function() {
         // Replace with your actual resume file path
-        window.open("https://drive.google.com/file/d/1d48FehYLVTnvKU_y6lTaD5CsCPmol3dI/view?usp=sharing", "_blank");
+        window.open("https://drive.google.com/file/d/1a1TiH4wypWzWsyqXYpDVQVciYA2iEBrx/view?usp=sharing", "_blank");
     };
 
     // Typing text effect
