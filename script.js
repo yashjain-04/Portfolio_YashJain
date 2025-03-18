@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             /*CHANGES*/
             //Use EmailJS to send email
-            emailjs.send("service_u9wg02w", "template_bwxfxsu", {
+            emailjs.send("service_u9wg02w", "template_2to7yoi", {
                 subject: subject,
                 name: name,
                 message: message,
