@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Download resume function
     window.downloadResume = function() {
         // Replace with your actual resume file path
-        window.open("https://drive.google.com/file/d/1d48FehYLVTnvKU_y6lTaD5CsCPmol3dI/view?usp=sharing", "_blank");
+        window.open("https://drive.google.com/file/d/1rXCQlwp7MrzYJTKsl52nysgJ4TkxCxkU/view?usp=sharing", "_blank");
     };
 
     // Typing text effect
@@ -133,26 +133,6 @@ document.addEventListener("DOMContentLoaded", function () {
             // Here you would typically send the form data to a server
             // For demo purposes, we'll just log it and show a success message
             console.log("Form submitted:", { name, email, subject, message });
-
-
-            /*CHANGES*/
-            //Use EmailJS to send email
-            emailjs.send("service_u9wg02w", "template_bwxfxsu", {
-                subject: subject,
-                name: name,
-                message: message,
-                email: email,
-            })
-            .then(function(response) {
-                console.log("Email sent successfully!", response.status, response.text);
-                alert("Thank you for your message! I'll check my email and get back to you soon.");
-                contactForm.reset();
-            })
-            .catch(function(error) {
-                console.error("Error sending email:", error);
-                alert("There was an issue. Please try again later.");
-            });
-
             
             // Show success message
             alert("Thank you for your message! I'll get back to you soon.");
